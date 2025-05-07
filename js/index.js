@@ -206,12 +206,14 @@ let inputPlayerOneNum = document.querySelector('.inputPlayerOneNum');
 let btnPlayerOneNum = document.querySelector('.btnPlayerOneNum');
 let errorPlayerOneNum = document.querySelector('.errorPlayerOneNum');
 let errorPlayerOneNum2 = document.querySelector('.errorPlayerOneNum2');
+let playerOneNameText = document.querySelector('.playerOneNameText');
 
 btnPlayerOne.addEventListener('click', function(){
     if(inputPlayerOne.value.trim() == ""){
         errorPlayerOne.style.display = "block";
     }else{
         screenForPlayerOneNum.style.display = "block";
+        playerOneNameText.innerHTML = inputPlayerOne.value;
         screenForPlayerOne.style.display = "none";
     }
 })
@@ -229,12 +231,14 @@ let screenForPlayerTwoName = document.querySelector('.screenForPlayerTwoName');
 let btnPlayerTwoName = document.querySelector('.btnPlayerTwoName');
 let errorPlayerTwoName = document.querySelector('.errorPlayerTwoName');
 let inputPlayerTwoName = document.querySelector('.inputPlayerTwoName');
+let playerTwoNameText = document.querySelector('.playerTwoNameText');
 
 btnPlayerTwoName.addEventListener('click', function(){
     if(inputPlayerTwoName.value.trim() == ""){
         errorPlayerTwoName.style.display = "block";
     }else{
         screenForPlayerTwoNum.style.display = "block";
+        playerTwoNameText.innerHTML = inputPlayerTwoName.value;
         screenForPlayerTwoName.style.display = "none";
     }
 })
@@ -245,14 +249,19 @@ let btnPlayerTwoNum = document.querySelector('.btnPlayerTwoNum');
 let errorPlayerTwoNum2 = document.querySelector('.errorPlayerTwoNum2');
 let playerOneWiningScreen = document.querySelector('.playerOneWiningScreen');
 let playerTwoWiningScreen = document.querySelector('.playerTwoWiningScreen');
+let winingOneNameText = document.querySelector('.winingOneNameText');
+let winingTwoNameText = document.querySelector('.winingTwoNameText');
+
 btnPlayerTwoNum.addEventListener('click', function(){
     if(inputPlayerTwoNum.value < 1 || inputPlayerTwoNum.value > 10 ){
         errorPlayerTwoNum2.style.display = "block";
     }else if( inputPlayerOneNum.value != inputPlayerTwoNum.value){
         screenForPlayerTwoNum.style.display = "none";
+        winingOneNameText.innerHTML = inputPlayerOne.value;
         playerOneWiningScreen.style.display = "block";
     } else{
         screenForPlayerTwoNum.style.display = "none";
+        winingTwoNameText.innerHTML = inputPlayerTwoName.value;
         playerTwoWiningScreen.style.display = "block";
     }
 })

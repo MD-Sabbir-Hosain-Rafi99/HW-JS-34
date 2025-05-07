@@ -6,65 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Js Practice Class One</title>
   <!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
- <!-- Player One Screen For Name -->
-<div class="screenForPlayerOne bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg h-[300px] text-center">
-  <h2 class="headingPlayerOne text-xl font-bold mb-4">Wanna Play Game?</h2>
-  <input type="text" placeholder="Enter Your name" class="inputPlayerOne w-full p-2 rounded mb-4" />
-  <button class="btnPlayerOne bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Submit</button>
-  <p class="errorPlayerOne mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please Enter Name!</p>
-</div>
+  <!-- Player One Screen For Name -->
+  <div class="screenForPlayerOne bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg h-[300px] text-center">
+    <h2 class="headingPlayerOne text-xl font-bold mb-4">Wanna Play Game?</h2>
+    <input type="text" placeholder="Enter Your name" class="inputPlayerOne w-full p-2 rounded mb-4" />
+    <button
+      class="btnPlayerOne bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Submit</button>
+    <p class="errorPlayerOne mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please Enter
+      Name!</p>
+  </div>
 
-<!-- Player One Screen For Number -->
-<div class="screenForPlayerOneNum hidden bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg text-center h-[400px]">
-  <h2 class="headingPlayerOneNum text-xl font-bold mb-4">Enter Any Number Existing 1 to 10 (Player 1)</h2>
-  <input type="number" placeholder="Any number 1-10" class="inputPlayerOneNum w-full p-2 rounded mb-4" />
-  <button class="btnPlayerOneNum bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Play</button>
-  <p class="errorPlayerOneNum2 mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please Enter Number 1-10</p>
-</div>
+  <!-- Player One Screen For Number -->
+  <div
+    class="screenForPlayerOneNum hidden bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg text-center h-[400px]">
+    <h2 class="headingPlayerOneNum text-xl font-bold mb-4">Enter Any Number Existing 1 to 10 (Player 1 : <span
+        class="playerOneNameText"></span>)</h2>
+    <input type="number" placeholder="Any number 1-10" class="inputPlayerOneNum w-full p-2 rounded mb-4" />
+    <button
+      class="btnPlayerOneNum bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Play</button>
+    <p class="errorPlayerOneNum2 mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please
+      Enter Number 1-10</p>
+  </div>
 
-<!-- Player Two Screen For Name -->
-<div class="screenForPlayerTwoName hidden bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg text-center h-[300px]">
-  <h2 class="headingPlayerTwoName text-xl font-bold mb-4">Player Two Name</h2>
-  <input type="text" placeholder="Enter Your name" class="inputPlayerTwoName w-full p-2 rounded mb-4" />
-  <button class="btnPlayerTwoName bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Submit</button>
-  <p class="errorPlayerTwoName mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please Enter Name!</p>
-</div>
+  <!-- Player Two Screen For Name -->
+  <div
+    class="screenForPlayerTwoName hidden bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg text-center h-[300px]">
+    <h2 class="headingPlayerTwoName text-xl font-bold mb-4">Player Two Name</h2>
+    <input type="text" placeholder="Enter Your name" class="inputPlayerTwoName w-full p-2 rounded mb-4" />
+    <button
+      class="btnPlayerTwoName bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Submit</button>
+    <p class="errorPlayerTwoName mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please
+      Enter Name!</p>
+  </div>
 
-<!-- Player Two Screen For Number -->
-<div class="screenForPlayerTwoNum hidden bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg text-center h-[400px]">
-  <h2 class="headingPlayerTwoNum text-xl font-bold mb-4">Enter Any Number Existing 1 to 10 (Player 2)</h2>
-  <input type="number" placeholder="Any number 1-10" class="inputPlayerTwoNum w-full p-2 rounded mb-4" />
-  <button class="btnPlayerTwoNum bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Play</button>
-  <p class="errorPlayerTwoNum2 mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please Enter Number 1-10</p>
-</div>
+  <!-- Player Two Screen For Number -->
+  <div
+    class="screenForPlayerTwoNum hidden bg-cyan-300 w-11/12 max-w-md mx-auto mt-10 p-10 rounded-lg text-center h-[400px]">
+    <h2 class="headingPlayerTwoNum text-xl font-bold mb-4">Enter Any Number Existing 1 to 10 (Player 2 : <span
+      class="playerTwoNameText"></span>)</h2>
+    <input type="number" placeholder="Any number 1-10" class="inputPlayerTwoNum w-full p-2 rounded mb-4" />
+    <button
+      class="btnPlayerTwoNum bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">Play</button>
+    <p class="errorPlayerTwoNum2 mt-4 bg-red-600 text-white font-bold text-lg p-4 rounded hidden inline-block">Please
+      Enter Number 1-10</p>
+  </div>
 
-<!-- Play Wining Card For Player 1 -->
-<div class="playerOneWiningScreen hidden bg-pink-600 w-11/12 max-w-xs mx-auto mt-10 p-5 rounded-2xl text-center text-white">
-  <h2 class="text-2xl font-bold">Player 1 Win!</h2>
-</div>
+  <!-- Play Wining Card For Player 1 -->
+  <div
+    class="playerOneWiningScreen hidden bg-pink-600 w-11/12 max-w-xs mx-auto mt-10 p-10 rounded-2xl text-center text-white">
+    <h2 class="text-2xl font-bold">Congratulation <span
+      class="winingOneNameText"></span> You Are Winner!</h2>
+  </div>
 
-<!-- Play Wining Card For Player 2 -->
-<div class="playerTwoWiningScreen hidden bg-purple-700 w-11/12 max-w-xs mx-auto mt-10 p-5 rounded-2xl text-center text-white">
-  <h2 class="text-2xl font-bold">Player 2 Win!</h2>
-</div>
+  <!-- Play Wining Card For Player 2 -->
+  <div
+    class="playerTwoWiningScreen hidden bg-purple-700 w-11/12 max-w-xs mx-auto mt-10 p-10 rounded-2xl text-center text-white">
+    <h2 class="text-2xl font-bold">Congratulation <span
+      class="winingTwoNameText"></span> You Are Winner!</h2>
+  </div>
 
 
 
   <script src="js/index.js">
-     tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          aqua: '#00FFFF',
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            aqua: '#00FFFF',
+          },
         },
       },
-    },
-  }
+    }
   </script>
 </body>
 
