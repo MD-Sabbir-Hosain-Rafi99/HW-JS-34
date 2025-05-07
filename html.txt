@@ -1,0 +1,75 @@
+<div
+    style="background-color: aqua; width: 300px; text-align: center; height: 250px; padding: 40px; margin: auto; margin-top: 40px; border-radius: 10px;"
+    class="screenForPlayerOne">
+    <h2 class="headingPlayerOne">Wanna Play Game?</h2>
+    <input type="text" placeholder="Enter Your name" class="inputPlayerOne">
+    <br><br>
+    <button class="btnPlayerOne">Submit</button>
+    <br>
+    <p style="padding: 20px; background-color: red; display: inline-block; color: white;font-size: large; font-weight: 900; display: none;"
+      class="errorPlayerOne">Please Enter Name!</p>
+  </div>
+  <!-- Player One Screen For Name -->
+
+
+
+
+
+  <!-- Player One Screen For Number -->
+  <div
+    style="background-color: aqua; width: 300px; text-align: center; height: 250px; padding: 40px; margin: auto; margin-top: 40px; border-radius: 10px; display: none;"
+    class="screenForPlayerOneNum">
+    <h2 class="headingPlayerOneNum">Enter Any Number Existing 1 to 10 (Player 1)</h2>
+    <input type="number" placeholder="Any number 1-10" class="inputPlayerOneNum">
+    <br><br>
+    <button class="btnPlayerOneNum">Play</button>
+    <br>
+    <p style="padding: 20px; background-color: red; display: inline-block; color: white;font-size: large; font-weight: 900; display: none;"
+      class="errorPlayerOneNum2">Please Enter Number 1-10</p>
+  </div>
+  <!-- Player One Screen For Number -->
+
+
+  <!-- Player Two Screen For Name -->
+  <div
+    style="background-color: aqua; width: 300px; text-align: center; height: 250px; padding: 40px; margin: auto; margin-top: 40px; border-radius: 10px; display: none;"
+    class="screenForPlayerTwoName">
+    <h2 class="headingPlayerTwoName">Player Two Name</h2>
+    <input type="text" placeholder="Enter Your name" class="inputPlayerTwoName">
+    <br><br>
+    <button class="btnPlayerTwoName">Submit</button>
+    <br>
+    <p style="padding: 20px; background-color: red; display: inline-block; color: white;font-size: large; font-weight: 900; display: none;"
+      class="errorPlayerTwoName">Please Enter Name!</p>
+  </div>
+  <!-- Player Two Screen For Name -->
+
+  <!-- Player Two Screen For Number -->
+  <div
+    style="background-color: aqua; width: 300px; text-align: center; height: 250px; padding: 40px; margin: auto; margin-top: 40px; border-radius: 10px; display: none;"
+    class="screenForPlayerTwoNum">
+    <h2 class="headingPlayerTwoNum">Enter Any Number Existing 1 to 10 (Player 2)</h2>
+    <input type="number" placeholder="Any number 1-10" class="inputPlayerTwoNum">
+    <br><br>
+    <button class="btnPlayerTwoNum">Play</button>
+    <br>
+    <p style="padding: 20px; background-color: red; display: inline-block; color: white;font-size: large; font-weight: 900; display: none;"
+      class="errorPlayerTwoNum2">Please Enter Number 1-10</p>
+  </div>
+  <!-- Player Two Screen For Number -->
+
+
+
+  <!-- Play Wining Card For Player 1 -->
+  <div class="playerOneWiningScreen"
+    style="background-color: deeppink; width: 200px; padding: 20px; border-radius: 20px; text-align: center; color: white; margin: auto; margin-top: 40px; display: none;">
+    <h2>Player 1 Win!</h2>
+  </div>
+  <!-- Play Wining Card For Player 1 -->
+
+
+  <!-- Play Wining Card For Player 2 -->
+  <div class="playerTwoWiningScreen"
+    style="background-color: rgb(122, 20, 255); width: 200px; padding: 20px; border-radius: 20px; text-align: center; color: white; margin: auto; margin-top: 40px; display: none;">
+    <h2>Player 2 Win!</h2>
+  </div>
